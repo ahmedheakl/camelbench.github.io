@@ -404,6 +404,21 @@
     </div>
 </section>
 
+
+        <!-- Bar Charts (2x4 Matrix) -->
+        <div class="chart-grid">
+            <div id="bar-chart-1" class="bar-chart"></div>
+            <div id="bar-chart-2" class="bar-chart"></div>
+            <div id="bar-chart-3" class="bar-chart"></div>
+            <div id="bar-chart-4" class="bar-chart"></div>
+            <div id="bar-chart-5" class="bar-chart"></div>
+            <div id="bar-chart-6" class="bar-chart"></div>
+            <div id="bar-chart-7" class="bar-chart"></div>
+            <div id="bar-chart-8" class="bar-chart"></div>
+        </div>
+    </div>
+</section>
+
 <!-- Pie Chart Script -->
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script>
@@ -450,64 +465,6 @@
     // Render Pie Chart
     Plotly.newPlot('pie-chart', pieData, pieLayout);
 </script>
-
-
-        <!-- Bar Charts (2x4 Matrix) -->
-        <div class="chart-grid">
-            <div id="bar-chart-1" class="bar-chart"></div>
-            <div id="bar-chart-2" class="bar-chart"></div>
-            <div id="bar-chart-3" class="bar-chart"></div>
-            <div id="bar-chart-4" class="bar-chart"></div>
-            <div id="bar-chart-5" class="bar-chart"></div>
-            <div id="bar-chart-6" class="bar-chart"></div>
-            <div id="bar-chart-7" class="bar-chart"></div>
-            <div id="bar-chart-8" class="bar-chart"></div>
-        </div>
-    </div>
-</section>
-
-<!-- Plotly Charts Script -->
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script>
-    // Pie Chart Data
-    var pieData = [{
-        values: [14251, 7931, 2820, 765, 1285, 506, 769, 709],
-        labels: [
-            'Multimodal Understanding and Reasoning',
-            'OCR and Document Understanding',
-            'Chart and Diagram Understanding',
-            'Video Understanding',
-            'Cultural Specific Understanding',
-            'Medical Imaging',
-            'Agricultural Image Understanding',
-            'Remote Sensing Understanding'
-        ],
-        type: 'pie',
-        marker: {
-            colors: [
-                '#FFEBF9', '#E6D3FF', '#E0EBFE', '#B9E6EA', '#E2FEDB', '#FFFFCF', '#FBDDB2', '#FBDFDA'
-            ],
-            line: {
-                color: ['#FF7E79', '#9437FF', '#0096FF', '#168E74', '#2A975A', '#FFC000', '#FF9300', '#FF7E79'],
-                width: 1
-            }
-        },
-        hoverinfo: 'label',
-        hoverlabel: {
-            bordercolor: '#808080',
-            font: {
-                color: 'black'
-            }
-        }
-    }];
-
-    var pieLayout = {
-        title: 'CAMEL-Bench Domains',
-        height: 600,
-        width: 600
-    };
-
-    Plotly.newPlot('pie-chart', pieData, pieLayout);
 
     // Function to generate Bar Chart Data for Multimodal Understanding Sub-Domains
     function generateMultimodalBarData() {
