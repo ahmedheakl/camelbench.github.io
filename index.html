@@ -393,7 +393,7 @@
             
             <!-- Image Placeholder -->
             <div id="image-container" style="width: 50%; text-align: center;">
-                <img src="static/images/sample-image.png" alt="Sample Image" style="max-width: 80%; height: auto;">
+                <img src="static/images/sample-image.png" alt="CAMEL-Bench Damins" style="max-width: 80%; height: auto;">
             </div>
         </div>
 
@@ -563,13 +563,32 @@
     );
     Plotly.newPlot('bar-chart-4', generateSimpleBarData(
         ['Countries & Landmarks', 'Cultural-Specific Occasions', 'General Video Scenes'], 
-        [75, 36, 654]), 
+        [87, 24, 654]), 
         {title: 'Video Understanding', ...barLayout}
     );
     Plotly.newPlot('bar-chart-5', generateSimpleBarData(
         ['Celebrities', 'Food', 'Countries & Landmarks'], 
         [444, 347, 494]), 
         {title: 'Cultural Specific Understanding', ...barLayout}
+    );
+
+    Plotly.newPlot('bar-chart-6', generateSimpleBarData(
+        ['Medical Understanding', 'Diagnosis', 'Pharmacy','Public Health','Clinical Medicine', 'Basic Medical Science'], 
+        [78, 87, 82,87,83,89]), 
+        {title: 'Medical Image Understanding', ...barLayout}
+    );
+
+
+    Plotly.newPlot('bar-chart-7',  generateSimpleBarData(
+            ['Plants Illness', 'Fruits & Veggies Identification', 'Plants Types'], 
+            [100, 150, 200,]),  
+            {title: 'Agricultural Image Understanding', ...barLayout}
+    );
+
+    Plotly.newPlot('bar-chart-8', generateSimpleBarData(
+            [ 'Land Geospatial', 'Transportation Geospatial','Construction Geospatial'], 
+            [100, 150, 200]), 
+            {title: 'Remote Sensing Understanding', ...barLayout}
     );
 </script>
 
